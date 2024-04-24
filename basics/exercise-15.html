@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise #15 || Animated logo</title>
+
+	<!-- Reset -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+
+	<style>
+		.container {
+			display: grid;
+			width: 100%;
+			height: 100vh;
+			place-content: center;
+			background-color: #F6E9FE;
+		}
+
+		/* Air */
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- Air -->
+		<svg width="89" height="116" viewBox="0 0 89 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path id="logo" d="M8.45455 93V23.1818H32.8636C37.7273 23.1818 41.7386 24.0227 44.8977 25.7045C48.0568 27.3636 50.4091 29.6023 51.9545 32.4205C53.5 35.2159 54.2727 38.3182 54.2727 41.7273C54.2727 44.7273 53.7386 47.2045 52.6705 49.1591C51.625 51.1136 50.2386 52.6591 48.5114 53.7955C46.8068 54.9318 44.9545 55.7727 42.9545 56.3182V57C45.0909 57.1364 47.2386 57.8864 49.3977 59.25C51.5568 60.6136 53.3636 62.5682 54.8182 65.1136C56.2727 67.6591 57 70.7727 57 74.4545C57 77.9545 56.2045 81.1023 54.6136 83.8977C53.0227 86.6932 50.5114 88.9091 47.0795 90.5455C43.6477 92.1818 39.1818 93 33.6818 93H8.45455ZM16.9091 85.5H33.6818C39.2045 85.5 43.125 84.4318 45.4432 82.2955C47.7841 80.1364 48.9545 77.5227 48.9545 74.4545C48.9545 72.0909 48.3523 69.9091 47.1477 67.9091C45.9432 65.8864 44.2273 64.2727 42 63.0682C39.7727 61.8409 37.1364 61.2273 34.0909 61.2273H16.9091V85.5ZM16.9091 53.8636H32.5909C35.1364 53.8636 37.4318 53.3636 39.4773 52.3636C41.5455 51.3636 43.1818 49.9545 44.3864 48.1364C45.6136 46.3182 46.2273 44.1818 46.2273 41.7273C46.2273 38.6591 45.1591 36.0568 43.0227 33.9205C40.8864 31.7614 37.5 30.6818 32.8636 30.6818H16.9091V53.8636ZM75.6648 93.5455C73.983 93.5455 72.5398 92.9432 71.3352 91.7386C70.1307 90.5341 69.5284 89.0909 69.5284 87.4091C69.5284 85.7273 70.1307 84.2841 71.3352 83.0795C72.5398 81.875 73.983 81.2727 75.6648 81.2727C77.3466 81.2727 78.7898 81.875 79.9943 83.0795C81.1989 84.2841 81.8011 85.7273 81.8011 87.4091C81.8011 88.5227 81.517 89.5455 80.9489 90.4773C80.4034 91.4091 79.6648 92.1591 78.733 92.7273C77.8239 93.2727 76.8011 93.5455 75.6648 93.5455Z" stroke="black"/>
+		</svg>
+			
+	</div>
+
+	<!-- Air -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		let tl = gsap.timeline({repeat: 2});
+		
+		tl.to("#logo",{
+			rotation: 360,
+			duration: 3
+		})
+		.fromTo("#logo", {
+			drawSVG: '100% 100%',
+			stroke: 'green',
+			fill: 'white'
+		},{
+			drawSVG: '0% 100%',
+			duration: 1.2,
+			stroke: 'blue',
+			fill: "red"
+		})
+
+	</script>
+</body>
+</html>
