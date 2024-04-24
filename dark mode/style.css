@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+section{
+    height: 100vh;
+    background: #cfcece;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    font-size: 70px;
+}
+
+svg{
+    cursor: pointer;
+}

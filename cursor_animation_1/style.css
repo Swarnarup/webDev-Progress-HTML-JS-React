@@ -1,0 +1,20 @@
+*{
+    background-color: beige;
+    margin: 0px;
+}
+
+:root{
+    --scale-fac: 40px;
+}
+
+#cursor{
+    position: fixed;
+    z-index: 2000;
+    border: 1px solid black;
+    height: var(--scale-fac);
+    width: var(--scale-fac);
+    border-radius: 50%;
+    top: calc(-1*var(--scale-fac)/2);
+    left: calc(-1*var(--scale-fac)/2);
+    pointer-events: none !important;
+}
